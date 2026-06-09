@@ -44,7 +44,7 @@ class BlogList extends Component {
             </div>
           ) : (
             blogsList.map(eachBlogItem => (
-              <BlogItem blogItemDetails={eachBlogItem} />
+              <BlogItem key={eachBlogItem.id} blogItemDetails={eachBlogItem} />
             ))
           )}
         </ul>
